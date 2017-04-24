@@ -1,0 +1,21 @@
+#main-nav-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.right-col {
+  background-color: #f5f4ef;
+  height: 96vh;
+  padding: 0;
+  margin: 0;
+}
+
+.row.no-pad {
+  margin-right:0;
+  margin-left:0;
+}
+.row.no-pad > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
