@@ -1,5 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-side main-nav">
-  <img class="main-nav-brand" src="./assets/nlm-brand-md.png" alt="NLM Photography">
+  <div class="main-nav-brand-wrapper">
+    <img class="main-nav-brand" src="./assets/nlm-brand-md.png" alt="NLM Photography">
+  </div>
   <ul>
     <li class="main-nav-li"><a class="main-nav-a" routerLink="" routerLinkActive="active">HOME</a></li>
     <li class="main-nav-li"><a class="main-nav-a" routerLink="/portfolio" routerLinkActive="active">PORTFOLIO</a></li>
@@ -7,5 +9,16 @@
     <li class="main-nav-li"><a class="main-nav-a">THE EXPERIENCE</a></li>
     <li class="main-nav-li"><a class="main-nav-a">TESTIMONIALS</a></li>
     <li class="main-nav-li"><a class="main-nav-a">NEXT STEPS</a></li>
+    <li class="main-nav-li">
+      <a class="main-nav-a instagram-nav" tooltip="Instagram" placement="bottom">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <span class="sr-only">Instagram</span>
+      </a>
+      <a class="main-nav-a fb-nav" tooltip="Facebook" placement="bottom">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        <span class="sr-only">Facebook</span>
+      </a>
+    </li>
   </ul>
+  <img class="note-img" src="./assets/note.jpg" alt="Decorative Image">
 </nav>

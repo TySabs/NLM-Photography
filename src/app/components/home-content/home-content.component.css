@@ -6,12 +6,17 @@
 }
 
 .carousel-wrapper {
-  margin: 20px auto;
+  margin: 22px auto;
   text-align: center;
 }
 
 @media screen and (max-width: 900px) {
   .carousel-wrapper {
     margin: 0
+  }
+
+  .home-content {
+    padding-top: 60px;
+    height: auto;
   }
 }

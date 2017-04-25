@@ -12,6 +12,7 @@
 @media screen and (max-width: 900px) {
   .main-nav {
     text-align: center;
+    padding-right: 0;
   }
 }
 
@@ -32,6 +33,12 @@
   margin: 40px 0;
 }
 
+@media screen and (max-width: 900px) {
+  .main-nav-brand-wrapper {
+    text-align: center;
+  }
+}
+
 .main-nav-a {
   color: #737370;
 }
@@ -40,4 +47,25 @@
   text-decoration: none;
   cursor: pointer;
   color: #BDA446;
+}
+
+.instagram-nav,
+.fb-nav {
+  font-size: 20px;
+}
+
+.fb-nav {
+  margin: auto 6px auto 12px;
+}
+
+.note-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .note-img {
+    display: none;
+  }
 }
