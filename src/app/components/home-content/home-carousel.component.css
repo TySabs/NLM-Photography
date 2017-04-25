@@ -1,0 +1,13 @@
+.carousel-img {
+  max-width: 80%;
+  max-height: 90vh;
+}
+
+.carousel {
+  background: none;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}

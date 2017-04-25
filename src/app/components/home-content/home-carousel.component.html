@@ -1,0 +1,5 @@
+<carousel [interval]="3000" [noPause]="true">
+  <slide *ngFor="let slide of slideList; let index=index">
+    <img class="carousel-img" [src]="slide">
+  </slide>
+</carousel>
