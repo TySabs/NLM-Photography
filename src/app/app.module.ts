@@ -32,7 +32,6 @@ import appRoutes from './app.routes';
     CarouselModule.forRoot(),
     TooltipModule.forRoot()
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
