@@ -5,6 +5,12 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
+
 .left-col {
   flex: 1;
   background-color: #b5b1a8;
@@ -15,4 +21,33 @@
   height: 100vh;
   text-align: center;
   box-shadow: -1px 1px 2px 2px #ccc;
+}
+
+/* left-col styles */
+.hero-img {
+  margin-top: 20%;
+  max-width: 90%;
+}
+
+.hero-text {
+  padding: 10px;
+}
+
+.hero-wrapper: {
+  width: 370px;
+}
+
+/* right-col style */
+.sm-note-img {
+  margin-top: 60px;
+}
+
+.content-header {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.content-text {
+  font-size: 14px;
+  padding: 14px;
 }

@@ -34,6 +34,10 @@
   margin: 40px 0;
 }
 
+.main-nav-list {
+  padding-left: 0;
+}
+
 .main-nav-a {
   color: #737370;
 }
