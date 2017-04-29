@@ -6,7 +6,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HomeContentComponent } from './home-content.component';
 import { HomeCarouselComponent } from './home-carousel.component';
 
-import homeRoutes from './home.routes';
+import { homeRoutes } from './home.routes';
 
 @NgModule({
   imports: [
@@ -19,4 +19,4 @@ import homeRoutes from './home.routes';
     HomeContentComponent
   ]
 })
-export default class HomeModule { }
+export class HomeModule { }

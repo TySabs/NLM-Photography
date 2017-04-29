@@ -1,8 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
 import { MeetContentComponent } from './meet-content.component';
 
-const meetRoutes: Routes = [
+const routes: Routes = [
   { path: '', component: MeetContentComponent }
 ];
 
-export default RouterModule.forChild(meetRoutes);
+export const meetRoutes = RouterModule.forChild(routes);

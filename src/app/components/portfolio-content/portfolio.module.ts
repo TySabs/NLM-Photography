@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PortfolioContentComponent } from './portfolio-content.component';
 
-import portfolioRoutes from './portfolio.routes';
+import { portfolioRoutes } from './portfolio.routes';
 
 @NgModule({
   imports: [
@@ -14,4 +14,4 @@ import portfolioRoutes from './portfolio.routes';
     PortfolioContentComponent
   ]
 })
-export default class PortfolioModule { }
+export class PortfolioModule { }

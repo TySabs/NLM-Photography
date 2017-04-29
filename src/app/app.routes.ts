@@ -1,14 +1,12 @@
 import { RouterModule, Routes } from '@angular/router';
 
-import { TestimonialContentComponent } from './components/testimonial-content/testimonial-content.component';
-
-const appRoutes: Routes = [
-  { path: '', loadChildren: 'app/components/home-content/home.module' },
-  { path: 'portfolio', loadChildren: 'app/components/portfolio-content/portfolio.module' },
-  { path: 'the-experience', loadChildren: 'app/components/experience-content/experience.module' },
-  { path: 'meet-natasha', loadChildren: 'app/components/meet-content/meet.module' },
-  { path: 'testimonials', loadChildren: 'app/components/testimonial-content/testimonial.module' },
-  { path: 'next-steps', loadChildren: 'app/components/next-step-content/next-step.module' }
+const routes: Routes = [
+  { path: '', loadChildren: './components/home-content/home.module#HomeModule' },
+  { path: 'portfolio', loadChildren: './components/portfolio-content/portfolio.module#PortfolioModule' },
+  { path: 'the-experience', loadChildren: './components/experience-content/experience.module#ExperienceModule' },
+  { path: 'meet-natasha', loadChildren: './components/meet-content/meet.module#MeetModule' },
+  { path: 'testimonials', loadChildren: './components/testimonial-content/testimonial.module#TestimonialModule' },
+  { path: 'next-steps', loadChildren: './components/next-step-content/next-step.module#NextStepModule' }
 ];
 
-export default RouterModule.forRoot(appRoutes);
+export const appRoutes = RouterModule.forRoot(routes);

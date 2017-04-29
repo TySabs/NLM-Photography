@@ -1,8 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
 import { ExperienceContentComponent } from './experience-content.component';
 
-const experienceRoutes: Routes = [
+const routes: Routes = [
   { path: '', component: ExperienceContentComponent }
 ];
 
-export default RouterModule.forChild(experienceRoutes);
+export const experienceRoutes = RouterModule.forChild(routes);

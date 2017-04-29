@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MeetContentComponent } from './meet-content.component';
 
-import meetRoutes from './meet.routes';
+import { meetRoutes } from './meet.routes';
 
 @NgModule({
   imports: [
@@ -14,4 +14,4 @@ import meetRoutes from './meet.routes';
     MeetContentComponent
   ]
 })
-export default class MeetModule { }
+export class MeetModule { }

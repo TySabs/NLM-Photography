@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { NextStepContentComponent } from './next-step-content.component';
 
-import nextStepRoutes from './next-step.routes';
+import { nextStepRoutes } from './next-step.routes';
 
 @NgModule({
   imports: [
@@ -14,4 +14,4 @@ import nextStepRoutes from './next-step.routes';
     NextStepContentComponent
   ]
 })
-export default class NextStepModule { }
+export class NextStepModule { }

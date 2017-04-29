@@ -1,8 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
 import { PortfolioContentComponent } from './portfolio-content.component';
 
-const portfolioRoutes: Routes = [
+const routes: Routes = [
   { path: '', component: PortfolioContentComponent }
 ];
 
-export default RouterModule.forChild(portfolioRoutes);
+export const portfolioRoutes = RouterModule.forChild(routes);

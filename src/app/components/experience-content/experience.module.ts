@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ExperienceContentComponent } from './experience-content.component';
 
-import experienceRoutes from './experience.routes';
+import { experienceRoutes } from './experience.routes';
 
 @NgModule({
   imports: [
@@ -14,4 +14,4 @@ import experienceRoutes from './experience.routes';
     ExperienceContentComponent
   ]
 })
-export default class ExperienceModule{ }
+export class ExperienceModule{ }

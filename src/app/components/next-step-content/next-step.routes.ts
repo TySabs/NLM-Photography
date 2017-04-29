@@ -1,8 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NextStepContentComponent } from './next-step-content.component';
 
-const nextStepRoutes: Routes = [
+const routes: Routes = [
   { path: '', component: NextStepContentComponent }
 ];
 
-export default RouterModule.forChild(nextStepRoutes);
+export const nextStepRoutes = RouterModule.forChild(routes);
