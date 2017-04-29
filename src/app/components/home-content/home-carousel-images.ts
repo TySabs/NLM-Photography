@@ -12,5 +12,7 @@ export const homeCarouselImages: string[] = [
   "./assets/main-carousel/nlm-11.jpg",
   "./assets/main-carousel/nlm-12.jpg",
   "./assets/main-carousel/nlm-13.jpg",
-  "./assets/main-carousel/nlm-14.jpg"
+  "./assets/main-carousel/nlm-14.jpg",
+  "./assets/main-carousel/nlm-15.jpg",
+  "./assets/main-carousel/nlm-16.jpg"
 ];
