@@ -1,10 +1,17 @@
 .carousel-img {
   max-width: 80%;
   max-height: 90vh;
-  vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-img {
+    max-height: 70vh;
+  }
 }
 
 .carousel {
+  display: flex;
+  flex-direction: column;
   background: none;
 }
 

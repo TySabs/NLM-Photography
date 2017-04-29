@@ -1,14 +1,20 @@
-#main-nav-wrapper {
+#body-wrapper {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
 .right-col {
-  background-color: #f5f4ef;
-  height: 97vh;
   padding: 0;
   margin: 0;
+  height: 100%;
+  flex: 14;
+}
+
+.left-col {
+  flex: 1;
+  height: 100%;
+  flex-basis: 170px;
 }
 
 .row.no-pad {
@@ -18,4 +24,16 @@
 .row.no-pad > [class*='col-'] {
   padding-right:0;
   padding-left:0;
+}
+
+.inner-content-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+  .inner-content-wrapper {
+    flex-direction: column;
+  }
 }

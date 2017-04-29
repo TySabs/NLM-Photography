@@ -1,22 +1,17 @@
-.home-content {
-  background-color: #f5f4ef;
-  margin-top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .carousel-wrapper {
-  margin: 22px auto;
+  padding-top: 4%;
   text-align: center;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 767px) {
   .carousel-wrapper {
-    margin: 0
+    padding-top: 40px;
+    height: 700px;
   }
+}
 
-  .home-content {
-    padding-top: 60px;
-    height: auto;
+@media screen and (max-width: 500px) {
+  .carousel-wrapper {
+    height: 540px;
   }
 }
