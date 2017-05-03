@@ -24,7 +24,12 @@ export class ContactFormService {
         prefixCode: this.formBuilder.control(null, Validators.required),
         suffixCode: this.formBuilder.control(null, Validators.required)
       }),
-      venue: this.formBuilder.control(null, Validators.required),
+      weddingDate: this.formBuilder.group({
+        dateMM: this.formBuilder.control(null, Validators.required),
+        dateDD: this.formBuilder.control(null, Validators.required),
+        dateYY: this.formBuilder.control(null, Validators.required)
+      }),
+      weddingVenue: this.formBuilder.control(null, Validators.required),
       extraInfo: this.formBuilder.control(null)
     });
   }

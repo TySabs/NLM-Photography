@@ -1,7 +1,7 @@
 <form novalidate [formGroup]="formService.contactForm" (ngSubmit)="formService.onSubmitForm()">
   <div class="input-wrapper">
 
-    <label class="input-header">Name *</label>
+    <label class="input-header">Name: *</label>
     <div class="first-name-wrapper">
       <input type="text" class="first-name-input" formControlName="userFirstName" spellcheck="false">
       <label class="first-name-footer">First Name</label>
@@ -14,7 +14,7 @@
   </div> <!-- name-input-wrapper -->
 
   <div class="input-wrapper">
-    <label class="input-header">Email Address *</label>
+    <label class="input-header">Email Address: *</label>
     <input type="email" class="email-input" autocompletetype="email" formControlName="userEmail" spellcheck="false">
   </div> <!-- email-input-wrapper -->
 
@@ -35,9 +35,25 @@
     </div> <!--sm-input-wrapper -->
   </div> <!-- phone-input-wrapper -->
 
+  <div class="input-wrapper" formGroupName="weddingDate">
+    <label class="input-header form-control-header">Wedding Date: *</label>
+    <div class="xs-input-wrapper">
+      <input type="text" class="date-input" formControlName="dateMM" maxlength="2">
+      <label class="input-subheader">MM</label>
+    </div> <!-- xs-input-wrapper month -->
+    <div class="xs-input-wrapper">
+      <input type="text" class="date-input" formControlName="dateDD" maxlength="2">
+      <label class="input-subheader">DD</label>
+    </div> <!-- xs-input-wrapper day -->
+    <div class="sm-input-wrapper">
+      <input type="text" class="date-input" formControlName="dateYY" maxlength="4">
+      <label class="input-subheader">YYYY</label>
+    </div> <!-- sm-input-wrapper -->
+  </div> <!-- primary-date-form-wrapper -->
+
   <div class="input-wrapper">
     <label class="input-header form-control-header">Venue: *</label>
-    <input type="text" class="other-input" formControlName="venu">
+    <input type="text" class="other-input" formControlName="weddingVenue">
   </div> <!-- venue-input-wrapper -->
 
   <div class="input-wrapper">

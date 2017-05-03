@@ -56,7 +56,8 @@ textarea[type=text].ng-touched.ng-dirty.ng-invalid {
   display: inline-block;
 }
 
-.phone-input {
+.phone-input,
+.date-input {
   max-width: 100%;
 }
 

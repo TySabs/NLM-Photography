@@ -1,8 +1,23 @@
+.left-col {
+  flex-direction: column;
+}
+
 .contact-info-wrapper {
-  text-align: justify;
-  margin: 20px auto 20px 10px;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .contact-info-text {
   margin: 0;
+  color: #f5f4ef;
+}
+
+.phone-link {
+  text-decoration: none;
+}
+
+.phone-link:hover,
+.phone-link:visited,
+.phone-link:enabled {
+  text-decoration: none;
 }
