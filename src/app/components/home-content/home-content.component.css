@@ -1,6 +1,9 @@
 .carousel-wrapper {
-  padding-top: 2%;
+  display: flex;
+  height: 100vh;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 767px) {

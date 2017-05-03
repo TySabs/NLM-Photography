@@ -1,0 +1,11 @@
+.main-content {
+  background-color: #b5b1a8;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  max-width: 90%;
+}
