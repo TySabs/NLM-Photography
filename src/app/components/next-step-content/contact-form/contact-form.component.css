@@ -1,0 +1,65 @@
+input {
+  border: 1px solid #333;
+}
+
+input[type=text].ng-touched.ng-dirty.ng-invalid,
+input[type=email].ng-touched.ng-dirty.ng-invalid,
+textarea[type=text].ng-touched.ng-dirty.ng-invalid {
+  border: 3px solid #E90300;
+  outline: none;
+}
+
+.input-wrapper {
+  text-align: left;
+  width: 60%;
+  margin: 20px 0 20px 10px;
+}
+
+.input-header {
+  display: block;
+}
+
+.last-name-wrapper,
+.first-name-wrapper {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.first-name-wrapper {
+  margin-right: 10px;
+}
+
+.first-name-footer,
+.last-name-footer {
+  display: block;
+}
+
+.email-input {
+  width: 320px;
+}
+
+@media screen and (max-width: 540px) {
+  .email-input {
+    width: 220px;
+  }
+}
+
+/** xs, sm input Styles **/
+.xs-input-wrapper {
+  width: 36px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.sm-input-wrapper {
+  width: 42px;
+  display: inline-block;
+}
+
+.phone-input {
+  max-width: 100%;
+}
+
+.input-subheader {
+  margin-left: 6px;
+}

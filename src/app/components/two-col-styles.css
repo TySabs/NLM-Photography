@@ -26,6 +26,16 @@
   box-shadow: -1px 1px 2px 2px #ccc;
 }
 
+@media screen and (max-width: 540px) {
+  .left-col {
+    height: 400px;
+  }
+
+  .right-col {
+    height: 100%;
+  }
+}
+
 /* left-col styles */
 .hero-img {
   max-width: 90%;

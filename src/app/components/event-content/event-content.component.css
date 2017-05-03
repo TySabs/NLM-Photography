@@ -1,11 +1,26 @@
 .main-content {
-  background-color: #b5b1a8;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero-img {
-  max-width: 90%;
+@media screen and (max-width: 540px) {
+  .main-content {
+    height: 360px;
+  }
+}
+
+.sm-screen-only {
+  display: none;
+}
+
+@media screen and (max-width: 540px) {
+  .lg-screen-only {
+    display: none;
+  }
+
+  .sm-screen-only {
+    display: inherit;
+  }
 }

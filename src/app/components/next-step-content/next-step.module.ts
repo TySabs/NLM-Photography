@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { ContactFormModule } from './contact-form/contact-form.module';
 import { NextStepContentComponent } from './next-step-content.component';
 
 import { nextStepRoutes } from './next-step.routes';
@@ -8,7 +9,8 @@ import { nextStepRoutes } from './next-step.routes';
 @NgModule({
   imports: [
     CommonModule,
-    nextStepRoutes
+    nextStepRoutes,
+    ContactFormModule
   ],
   declarations: [
     NextStepContentComponent

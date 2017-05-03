@@ -1,0 +1,47 @@
+<form novalidate [formGroup]="formService.contactForm" (ngSubmit)="formService.onSubmitForm()">
+  <div class="input-wrapper">
+
+    <label class="input-header">Name *</label>
+    <div class="first-name-wrapper">
+      <input type="text" class="first-name-input" formControlName="userFirstName" spellcheck="false">
+      <label class="first-name-footer">First Name</label>
+    </div> <!-- first-name-wrapper -->
+    <div class="last-name-wrapper">
+      <input type="text" class="last-name-input" maxlength="30" formControlName="userLastName" spellcheck="false">
+      <label class="last-name-footer">Last Name</label>
+    </div> <!-- last-name-wrapper -->
+
+  </div> <!-- name-input-wrapper -->
+
+  <div class="input-wrapper">
+    <label class="input-header">Email Address *</label>
+    <input type="email" class="email-input" autocompletetype="email" formControlName="userEmail" spellcheck="false">
+  </div> <!-- email-input-wrapper -->
+
+
+  <div class="input-wrapper" formGroupName="userPhone">
+    <label class="input-header form-control-header">Phone: *</label>
+    <div class="xs-input-wrapper">
+      <input type="text" class="phone-input" formControlName="areaCode" maxlength="3">
+      <label class="input-subheader">(###)</label>
+    </div> <!-- xs-input-wrapper area-code-input -->
+    <div class="xs-input-wrapper">
+      <input type="text" class="phone-input" formControlName="prefixCode" maxlength="3">
+      <label class="input-subheader">###</label>
+    </div> <!-- xs-input-wrapper middle-input -->
+    <div class="sm-input-wrapper">
+      <input type="text" class="phone-input" formControlName="suffixCode" maxlength="4">
+      <label class="input-subheader">####</label>
+    </div> <!--sm-input-wrapper -->
+  </div> <!-- phone-input-wrapper -->
+
+  <div class="input-wrapper">
+    <label class="input-header form-control-header">Venue: *</label>
+    <input type="text" class="other-input" formControlName="venu">
+  </div> <!-- venue-input-wrapper -->
+
+  <div class="input-wrapper">
+    <label class="input-header form-control-header">Any other helpful information?</label>
+    <textarea type="text" class="extra-info-input" formControlName="extraInfo"></textarea>
+  </div> <!-- extra-info-form-wrapper -->
+</form>
