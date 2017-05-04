@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'portfolio-content',
@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class PortfolioContentComponent {
   title = "Portfolio Works!";
+
+  gallery : string[] = [];
+
+  constructor() {
+    for (let i = 1; i < 50; i++) {
+      const imageString: string = "./assets/portfolio/portfolio-" + i.toString() + ".jpg";
+      this.gallery.push(imageString);
+    }
+  }
 }

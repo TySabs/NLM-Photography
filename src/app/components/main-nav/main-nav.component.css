@@ -10,6 +10,13 @@
   margin: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .main-nav {
+    width: 260px;
+    position: fixed;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .main-nav {
     text-align: center;

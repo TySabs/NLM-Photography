@@ -1,0 +1,13 @@
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.portfolio-img {
+  flex: 0 200px;
+  max-height: 300px;
+  margin: 4px;
+}
