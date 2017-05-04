@@ -11,7 +11,7 @@ export class PortfolioContentComponent {
   gallery : string[] = [];
 
   constructor() {
-    for (let i = 1; i < 50; i++) {
+    for (let i = 1; i < 58; i++) {
       const imageString: string = "./assets/portfolio/portfolio-" + i.toString() + ".jpg";
       this.gallery.push(imageString);
     }
