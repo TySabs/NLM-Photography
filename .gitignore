@@ -9,6 +9,9 @@
 /node_modules
 /functions/node_modules
 
+# api keys
+/functions/config.json
+
 # IDEs and editors
 /.idea
 .project

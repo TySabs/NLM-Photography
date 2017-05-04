@@ -61,6 +61,10 @@ textarea[type=text].ng-touched.ng-dirty.ng-invalid {
   max-width: 100%;
 }
 
+.area-code-subheader {
+  margin-left: -2px;
+}
+
 .input-subheader {
   margin-left: 6px;
 }
