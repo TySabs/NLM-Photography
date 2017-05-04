@@ -10,7 +10,7 @@ export class ContactFormService {
   formSubmitted: boolean = false;
   headers = new Headers;
   requestOptions = new RequestOptions({ headers: this.headers});
-  mailUrl: string;
+  mailUrl: string = "https://us-central1-nlm-photography.cloudfunctions.net/sendContactMail";
 
   emailRegExp: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -36,8 +36,7 @@ export class ContactFormService {
 
   onSubmitForm() {
     this.formSubmitted = true;
-    console.log(this.contactForm.value);
-    // TODO http.post to sendMail URL
+    this.http.post(this.mailUrl, JSON.stringify(this.contactForm.value), this.requestOptions).subscribe();
     this.contactForm.reset();
   }
 }

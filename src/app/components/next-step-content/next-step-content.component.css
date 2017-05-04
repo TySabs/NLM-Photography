@@ -12,6 +12,11 @@
   color: #f5f4ef;
 }
 
+.content-text {
+  margin: 0;
+  padding: 0;  
+}
+
 .phone-link {
   text-decoration: none;
 }
