@@ -4,16 +4,21 @@
   width: 100%;
 }
 
+body {
+  display: flex;
+  align-items: stretch;
+}
+
 .right-col {
   padding: 0;
   margin: 0;
   height: 100%;
-  flex: 14;
+  flex: 19;
 }
 
 .left-col {
-  flex: 1;
   height: 100%;
+  flex: 1;
   flex-basis: 170px;
 }
 
