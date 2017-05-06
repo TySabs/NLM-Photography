@@ -10,12 +10,19 @@
   margin: 0;
 }
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 1500px) {
   .main-nav {
-    width: 240px;
+    width: 18vw;
     position: fixed;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1499px) {
+  .main-nav {
+    width: 16vw;
+    position: fixed;
+  }
+}*/
 
 @media screen and (max-width: 767px) {
   .main-nav {
@@ -27,6 +34,8 @@
 @media screen and (min-width: 768px) {
   .main-nav {
     height: 100vh;
+    position: fixed;
+    width: 200px;
   }
 }
 

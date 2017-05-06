@@ -6,9 +6,14 @@
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .carousel-wrapper {
+    width: calc(100vw - 200px);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .carousel-wrapper {
-    padding-top: 40px;
     height: 700px;
   }
 }
