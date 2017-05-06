@@ -7,12 +7,23 @@
   align-content: space-around;
 }
 
+.img-wrapper {
+  flex-grow: 1;
+}
+
 .portfolio-img {
   max-width: 100%;
   flex: 0 200px;
   max-height: 300px;
   flex-grow: 1;
   margin: 4px;
+}
+
+.portfolio-img-link {
+  display: flex;
+  flex: 0 200px;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .scroll-top-btn {

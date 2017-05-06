@@ -1,6 +1,8 @@
 <main class="main-content">
-  <img *ngFor="let image of gallery" [src]="image" alt="Gallery Picture" class="portfolio-img">
+  <div *ngFor="let image of gallery" class="img-wrapper">
+    <a [href]="image.lgUrl" data-lightbox="gallery" class="portfolio-img-link"><img [src]="image.smUrl" alt="Gallery Picture" class="portfolio-img"></a>
+  </div>
   <button class="scroll-top-btn" (click)="scrollToTopService.scrollToTop(500)">
     <i class="fa fa-arrow-up" aria-hidden="true"></i>
-</button>
+  </button>
 </main>

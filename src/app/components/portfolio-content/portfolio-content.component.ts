@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 
+import { GalleryImage } from './gallery-image';
 import { ScrollToTopService } from './scroll-to-top.service';
 
 @Component({
@@ -10,12 +11,18 @@ import { ScrollToTopService } from './scroll-to-top.service';
 })
 export class PortfolioContentComponent {
 
-  gallery : string[] = [];
+  gallery: GalleryImage[] = [];
 
   constructor(public scrollToTopService: ScrollToTopService) {
     for (let i = 1; i < 58; i++) {
-      const imageString: string = "./assets/portfolio/portfolio-" + i.toString() + ".jpg";
-      this.gallery.push(imageString);
+      const smImgString: string = "./assets/portfolio/portfolio-" + i.toString() + ".jpg";
+      const lgImgString: string = "./assets/portfolio/large/portfolio-" + i.toString() + "-lg.jpg";
+
+      const currentImage = {
+        smUrl: smImgString,
+        lgUrl: lgImgString
+      }
+      this.gallery.push(currentImage);
     }
   }
 }
