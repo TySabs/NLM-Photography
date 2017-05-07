@@ -1,14 +1,5 @@
-body {
-  height: 100%;
-}
-
 .left-col {
   flex-direction: column;
-}
-
-.right-col {
-  height: 100%;
-  padding-bottom: 40px;
 }
 
 .contact-info-wrapper {

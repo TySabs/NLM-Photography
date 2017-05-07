@@ -14,7 +14,7 @@ export class PortfolioContentComponent {
   gallery: GalleryImage[] = [];
 
   constructor(public scrollToTopService: ScrollToTopService) {
-    for (let i = 1; i < 58; i++) {
+    for (let i = 1; i < 81; i++) {
       const smImgString: string = "./assets/portfolio/portfolio-" + i.toString() + ".jpg";
       const lgImgString: string = "./assets/portfolio/large/portfolio-" + i.toString() + "-lg.jpg";
 
