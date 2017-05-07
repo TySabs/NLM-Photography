@@ -61,12 +61,12 @@ textarea[type=text].ng-touched.ng-dirty.ng-invalid {
   max-width: 100%;
 }
 
-.area-code-subheader {
-  margin-left: -6px;
-}
-
 .input-subheader {
   margin-left: 6px;
+}
+
+.area-code-subheader {
+  margin-left: 2px;
 }
 
 .extra-info-input {
@@ -78,4 +78,8 @@ textarea[type=text].ng-touched.ng-dirty.ng-invalid {
 .submit-btn-wrapper {
   text-align: left;
   margin-left: 10px;
+}
+
+.submit-btn:disabled {
+  cursor: not-allowed;
 }

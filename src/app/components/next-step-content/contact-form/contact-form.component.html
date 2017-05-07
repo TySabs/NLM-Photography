@@ -62,6 +62,6 @@
   </div> <!-- extra-info-form-wrapper -->
 
   <div class="submit-btn-wrapper">
-    <button type="submit" class="submit-btn btn btn-primary">Submit</button>
+    <button type="submit" class="submit-btn btn btn-primary" [disabled]="formService.contactForm.invalid || formService.formSubmitted">Submit</button>
   </div>
 </form>
