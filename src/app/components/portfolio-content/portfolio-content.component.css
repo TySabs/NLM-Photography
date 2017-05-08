@@ -19,6 +19,22 @@
   margin: 4px;
 }
 
+@media screen and (max-width: 767px) {
+
+  .main-content {
+    margin: 0 auto;
+  }
+
+  .img-wrapper {
+    width: 100%;
+  }
+
+  .portfolio-img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 .portfolio-img-link {
   display: flex;
   flex: 0 200px;
@@ -37,6 +53,12 @@
   background-color: rgba(214, 214, 212, 0.8);
   border: 1px #ccc solid;
   color: #424240;
+}
+
+@media screen and (max-width: 767px) {
+  .scroll-top-btn {
+    background-color: #D6D6D4;
+  }
 }
 
 .scroll-top-btn:focus,
