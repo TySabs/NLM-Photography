@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './experience-content.component.html',
   styleUrls: ['../two-col-styles.css', './experience-content.component.css']
 })
-export class ExperienceContentComponent {
-  title = "Experience Works!"
-}
+export class ExperienceContentComponent { }

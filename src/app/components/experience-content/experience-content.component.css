@@ -1,3 +1,39 @@
+.sm-note-img {
+  margin-bottom: 20px;
+}
+
+.hero-header {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
 .content-text {
   font-size: 14px;
+}
+
+.right-col {
+  min-height: 100%;
+}
+
+.left-col {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .left-col {
+    height: 100%;
+  }
+}
+
+.hero-text {
+  width: 90%;
+}
+
+.hero-img {
+  margin-bottom: 20px;
+}
+
+.quote-label {
+  font-style: italic;
 }
