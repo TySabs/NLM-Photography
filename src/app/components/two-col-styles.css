@@ -3,6 +3,7 @@
   flex-direction: row;
   text-align: center;
   justify-content: center;
+  background-color: #b5b1a8;
 }
 
 @media screen and (max-width: 767px) {
@@ -14,14 +15,17 @@
 .left-col {
   flex: 1;
   background-color: #b5b1a8;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .right-col {
   flex: 1;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #f5f4ef;
   text-align: center;
   box-shadow: -1px 1px 2px 2px #ccc;
 }
@@ -65,5 +69,5 @@
 
 .content-text {
   font-size: 14px;
-  padding: 14px;
+  padding: 20px;
 }

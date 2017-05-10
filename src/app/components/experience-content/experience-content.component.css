@@ -12,10 +12,6 @@
   font-size: 14px;
 }
 
-.right-col {
-  min-height: 100%;
-}
-
 .left-col {
   flex-direction: column;
 }

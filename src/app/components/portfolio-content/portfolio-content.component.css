@@ -21,7 +21,6 @@
 }
 
 @media screen and (max-width: 767px) {
-
   .main-content {
     margin: 0 auto;
   }
@@ -51,16 +50,9 @@
   top: 90%;
   box-shadow: 3px 3px 9px rgba(0,0,0,.5);
   background-color: #D6D6D4;
-  background-color: rgba(214, 214, 212, 0.8);
   border: 1px #ccc solid;
   color: #424240;
-  z-index: 5;
-}
-
-@media screen and (max-width: 767px) {
-  .scroll-top-btn {
-    background-color: #D6D6D4;
-  }
+  z-index: 100;
 }
 
 .scroll-top-btn:focus,
